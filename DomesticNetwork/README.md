@@ -19,7 +19,7 @@ Laboratório prático do curso **Conceitos Básicos de Redes** (Cisco Networking
 
 **Cenário:** montar do zero a rede de uma casa nova. Isso inclui conectar os cabos ao serviço de TV a cabo e à internet, configurar o roteador sem fio, ativar uma rede Wi-Fi protegida e validar que todos os dispositivos chegam à internet.
 
-> **Por que isso importa para suporte técnico:** é exatamente o tipo de chamado que um técnico N1 resolve no dia a dia: "o computador não tem internet", "o Wi-Fi não conecta", "o equipamento não pega IP".
+>"o computador não tem internet", "o Wi-Fi não conecta", "o equipamento não pega IP".
 
 ---
 
@@ -171,15 +171,6 @@ ping <IP externo>    # testa a saída para fora da rede local
 
 ---
 
-## O que aprendi
-
-- A diferença entre cabo coaxial (entrada do provedor) e Ethernet (rede local), e qual cabo usar em cada ligação.
-- O roteador doméstico acumula várias funções: **switch, ponto de acesso Wi-Fi, servidor DHCP e gateway padrão**.
-- O processo **DHCP** entrega IP, máscara e gateway automaticamente ao cliente.
-- Segurança básica de roteador: trocar senha padrão, usar WPA2 e limitar endereços.
-- Validar a rede em camadas: cabo ou Wi-Fi, depois IP, depois gateway, depois internet.
-
----
 
 ## Ferramentas
 
