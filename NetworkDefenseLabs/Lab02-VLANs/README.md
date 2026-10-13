@@ -19,7 +19,7 @@ Segundo lab da série de 7 que constrói, passo a passo, a rede de uma pequena e
 | Mesma senha do `netadmin` em R1, S1 e S2 (pendência do Lab 1) | ✅ Concluído |
 | SSH de S1, S2 e R1 a partir do Admin-PC (pendência do Lab 1) | ✅ Concluído |
 | Filtro de tráfego entre as VLANs | ⏳ Lab 4 (ACLs) |
-| Proteção das portas de acesso | ⏳ Lab 3 |
+| Proteção das portas de acesso | ✅ Concluído no [Lab 3](../Lab03-SegurancaSwitches/README.md) |
 
 ---
 
