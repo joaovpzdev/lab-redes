@@ -35,8 +35,8 @@ Série em andamento que constrói, lab por lab, a rede de uma empresa com matriz
 | [Lab 1](NetworkDefenseLabs/Lab01-AcessoSeguro/README.md) | Montagem da topologia e acesso seguro (senhas, SSH, proteção contra força bruta) | ✅ Concluído |
 | [Lab 2](NetworkDefenseLabs/Lab02-VLANs/README.md) | VLANs, trunks, roteamento entre VLANs, DHCP e NAT | ✅ Concluído |
 | [Lab 3](NetworkDefenseLabs/Lab03-SegurancaSwitches/README.md) | Segurança de switches: ataques e defesas de camada 2 (port security, DHCP snooping, BPDU Guard) | ✅ Concluído |
-| Lab 4 | Listas de controle de acesso (ACLs) | ⏳ Próximo |
-| Lab 5 | AAA, Syslog e NTP | ⏳ |
+| [Lab 4](NetworkDefenseLabs/Lab04-ACLs/README.md) | Listas de controle de acesso: filtro entre VLANs, login só do administrador e anti-spoofing | ✅ Concluído |
+| Lab 5 | AAA, Syslog e NTP | ⏳ Próximo |
 | Lab 6 | Firewall baseado em zonas (ZBF) | ⏳ |
 | Lab 7 | VPN IPsec site a site | ⏳ |
 

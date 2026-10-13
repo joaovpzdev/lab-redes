@@ -18,7 +18,7 @@ Segundo lab da série de 7 que constrói, passo a passo, a rede de uma pequena e
 | IP de gerência em S1 e S2 (SVI da VLAN 99) | ✅ Concluído |
 | Mesma senha do `netadmin` em R1, S1 e S2 (pendência do Lab 1) | ✅ Concluído |
 | SSH de S1, S2 e R1 a partir do Admin-PC (pendência do Lab 1) | ✅ Concluído |
-| Filtro de tráfego entre as VLANs | ⏳ Lab 4 (ACLs) |
+| Filtro de tráfego entre as VLANs | ✅ Concluído no [Lab 4](../Lab04-ACLs/README.md) |
 | Proteção das portas de acesso | ✅ Concluído no [Lab 3](../Lab03-SegurancaSwitches/README.md) |
 
 ---
