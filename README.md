@@ -57,7 +57,7 @@ Cada pasta tem um `README.md` com o relatório completo e uma pasta `img/` com a
 2. Escolha um lab e siga o README dele: a topologia, o endereçamento e os comandos estão todos documentados.
 3. Compare seus resultados com as capturas de tela da pasta `img/`.
 
-> As senhas mostradas nas configurações são apenas de laboratório, ou foram substituídas por `<...>`. Nunca reutilize senhas de lab em equipamentos reais.
+> As senhas dos labs foram substituídas por `<...>` nos comandos e cobertas nas capturas de tela. Nunca reutilize senhas de lab em equipamentos reais.
 
 ## Ferramentas
 
