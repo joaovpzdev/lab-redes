@@ -16,6 +16,7 @@ Primeiro de uma série de 7 labs que constroem, passo a passo, a rede de uma peq
 | Proteção contra força bruta em R1 (`login block-for`) | ✅ Concluído |
 | Rota padrão de R1 para o ISP | ✅ Concluído (adiantado do Lab 2) |
 | Teste de SSH em S1 e S2 | ⏳ Lab 2 (os switches ainda não têm IP) |
+| Mesma senha do usuário `netadmin` em R1, S1 e S2 | ⏳ Lab 2 (ver [7.6](#76-senha-do-usuário-recusada-por-ser-curta)) |
 
 ---
 
@@ -136,6 +137,7 @@ Um roteador só encaminha pacotes para redes que conhece. R1 conhecia apenas a r
 
 ## 5. Configuração passo a passo
 
+> As senhas reais do lab foram substituídas por `<...>` nos comandos e cobertas nos prints. Nunca publique senhas em repositórios, mesmo de laboratório: com elas (ou com o hash da `enable secret`), qualquer pessoa sabe exatamente como entrar no equipamento.
 
 ### R1 (roteador de borda)
 
@@ -302,7 +304,7 @@ A primeira tentativa de SSH falhou (`% Login invalid`) por senha digitada errada
 
 **Sintoma:** `enable secret E` foi aceito no S1 por um Enter pressionado cedo demais.
 **Causa:** sem `min-length`, o switch aceita qualquer senha.
-**Solução:** o comando seguinte, com a senha correta, substituiu o anterior.
+**Solução:** o comando seguinte, com a senha correta, substituiu o anterior. O caso mostra na prática por que a regra de tamanho mínimo é importante.
 
 ![Senha curta aceita no S1](img/10-s1-seguranca-basica.png)
 
@@ -318,7 +320,13 @@ A primeira tentativa de SSH falhou (`% Login invalid`) por senha digitada errada
 
 **Sintoma:** `% Password too short - must be at least 10 characters. Password not configured.`
 **Causa:** a senha planejada para o usuário `netadmin` tinha só 9 caracteres, e a regra `min-length 10` de R1 a recusou.
-**Solução:** usar uma senha com 10 caracteres ou mais. A mesma senha deve ser usada também em S1 e S2, para manter o padrão.
+**Solução:** em R1, usar uma senha com 10 caracteres ou mais.
+
+**Pendência:** S1 e S2 foram configurados antes com a senha de 9 caracteres e aceitaram, porque o 2960 não tem `min-length`. Assim, o `netadmin` ficou com uma senha no roteador e outra nos switches. Antes de testar o SSH dos switches no Lab 2, a senha é igualada repetindo o comando em S1 e S2 (o último comando substitui o anterior):
+
+```text
+username netadmin privilege 15 secret <senha-admin-10-caracteres>
+```
 
 ![Senha curta recusada em R1](img/14-r1-ssh-senha-curta.png)
 
@@ -333,8 +341,9 @@ A primeira tentativa de SSH falhou (`% Login invalid`) por senha digitada errada
 
 ---
 
-## 9. Lições 
+## 9. Lições aprendidas
 
+- **Conferir o prompt antes de digitar.** Muitos erros de `Invalid input` são modo errado.
 - **O `^` aponta onde o IOS parou de entender o comando.** Junto com o `?`, ele resolve a maioria dos erros de sintaxe.
 - **Cada equipamento suporta comandos diferentes.** Um comando que funciona no roteador pode não existir no switch.
 - **O último comando substitui o anterior.** Isso permite corrigir uma senha digitada errado sem apagar nada.
@@ -345,4 +354,4 @@ A primeira tentativa de SSH falhou (`% Login invalid`) por senha digitada errada
 
 ## 10. Próximo passo
 
-**Lab 2: VLANs, trunks e roteamento entre VLANs.** Separar usuários, servidores e gerência em VLANs diferentes, configurar as subinterfaces de R1 (*router-on-a-stick*), DHCP e NAT, e testar o SSH dos switches a partir do Admin-PC.
+**Lab 2: VLANs, trunks e roteamento entre VLANs.** Separar usuários, servidores e gerência em VLANs diferentes, configurar as subinterfaces de R1 (*router-on-a-stick*), DHCP e NAT, igualar a senha do `netadmin` nos switches e testar o SSH de S1 e S2 a partir do Admin-PC.
