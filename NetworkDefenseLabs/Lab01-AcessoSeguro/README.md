@@ -15,8 +15,8 @@ Primeiro de uma série de 7 labs que constroem, passo a passo, a rede de uma peq
 | SSH versão 2 em R1, S1 e S2 | ✅ Concluído |
 | Proteção contra força bruta em R1 (`login block-for`) | ✅ Concluído |
 | Rota padrão de R1 para o ISP | ✅ Concluído (adiantado do Lab 2) |
-| Teste de SSH em S1 e S2 | ⏳ Lab 2 (os switches ainda não têm IP) |
-| Mesma senha do usuário `netadmin` em R1, S1 e S2 | ⏳ Lab 2 (ver [7.6](#76-senha-do-usuário-recusada-por-ser-curta)) |
+| Teste de SSH em S1 e S2 | ✅ Concluído no [Lab 2](../Lab02-VLANs/README.md#66-ssh-a-partir-da-vlan-de-gerência) |
+| Mesma senha do usuário `netadmin` em R1, S1 e S2 | ✅ Concluído no [Lab 2](../Lab02-VLANs/README.md#51-s1) |
 
 ---
 
