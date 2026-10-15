@@ -2,7 +2,7 @@
 
 # Lab Redes
 
-**Laboratórios práticos de redes e segurança de redes no Cisco Packet Tracer**
+**Laboratórios práticos de redes e segurança de redes: Cisco Packet Tracer e hardware real**
 
 ![Cisco Networking Academy](https://img.shields.io/badge/Cisco-Networking%20Academy-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Packet Tracer](https://img.shields.io/badge/Simulador-Packet%20Tracer-049fd9?style=for-the-badge)
@@ -25,6 +25,7 @@ Os labs seguem uma progressão: começam com uma rede doméstica simples e avan�
 | [DomesticNetwork](DomesticNetwork/README.md) | Rede doméstica com roteador Wi-Fi | Básico | Cabeamento, roteador sem fio, DHCP, Wi-Fi WPA2, diagnóstico de suporte N1 |
 | [DefenseNetwork](DefenseNetwork/README.md) | Defesa em profundidade em uma pequena empresa | Intermediário | VLANs, roteamento entre VLANs, ACL estendida, port security |
 | [NetworkDefenseLabs](NetworkDefenseLabs/) | Série de 7 labs de defesa de redes | Intermediário a avançado | Hardening, SSH, segurança de switches, ACLs, AAA, firewall, VPN |
+| [AndroidNetworkSensor](AndroidNetworkSensor/README.md) | Celular Android (sem root) como sensor de rede — **hardware real** | Intermediário | Inventário de ativos, detecção de hosts novos, cron, captura com PCAPdroid, análise com tshark, threat intel (VirusTotal) |
 
 ### Série Network Defense Labs
 
@@ -61,7 +62,7 @@ Cada pasta tem um `README.md` com o relatório completo e uma pasta `img/` com a
 
 ## Ferramentas
 
-`Cisco Packet Tracer` · `Cisco IOS` · `Ethernet` · `Wi-Fi` · `VLAN` · `ACL` · `SSH` · `DHCP` · `NAT` · `IPsec`
+`Cisco Packet Tracer` · `Cisco IOS` · `Termux` · `nmap` · `tshark` · `Wireshark` · `Tailscale` · `Ethernet` · `Wi-Fi` · `VLAN` · `ACL` · `SSH` · `DHCP` · `NAT` · `IPsec`
 
 ---
 
